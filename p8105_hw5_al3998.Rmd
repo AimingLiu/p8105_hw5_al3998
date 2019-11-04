@@ -20,6 +20,8 @@ library(rvest)
 library(purrr)
 library(broom)
 library(patchwork)
+
+set.seed(10)
 ```
 
 ```{r}
@@ -168,6 +170,9 @@ beta_results =
     y = "power")  
    plot     
 ```
+
+We can see from the graphic,when the differnece between beta1 and 0 get larger,the value of power get larger and it is easier for us to reject the null.
+
 
 ### Make a plot showing the average estimate of beta1 and the true value of beta1 
 ```{r}
